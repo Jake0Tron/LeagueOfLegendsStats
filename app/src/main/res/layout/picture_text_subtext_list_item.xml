@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/single_picture_text_subtext"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#444">
+
+        <ImageView
+            android:id="@+id/single_picture_text_subtext_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:cropToPadding="true"
+            android:maxHeight="128dp"
+            android:maxWidth="128dp"
+            android:padding="5dp" />
+
+        <TextView
+            android:id="@+id/single_picture_text_subtext_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/single_picture_text_subtext_pic"
+            android:padding="5dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/single_picture_text_subtext_subtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/single_picture_text_subtext_text"
+            android:layout_toRightOf="@+id/single_picture_text_subtext_pic"
+            android:padding="5dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+</LinearLayout>

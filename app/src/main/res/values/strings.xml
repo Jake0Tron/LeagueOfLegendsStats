@@ -1,0 +1,141 @@
+<resources>
+    <!--
+    LOGIN MENU
+    <string name=""></string>
+    -->
+    <string name="app_name">LoL Stats</string>
+    <string name="login_title">LoL Stats on Demand!</string>
+    <string name="login_request_name">Enter Your Summoner Name:</string>
+    <string name="login_button">ENTER</string>
+    <string name="login_hint">In-Game Summoner Name…</string>
+    <string name="login_save_summoner">Save Summoner</string>
+
+    <!--
+    OPTIONS MENU
+    <string name="main_menu_"></string>
+    -->
+    <string name="main_menu_title">Select an Option:</string>
+    <string name="main_menu_single_summoner">Single Summoner</string>
+    <string name="main_menu_single_summoner_champion">Champion Base Stats</string>
+    <string name="main_menu_all_rotation_champions">Champions on Rotation this week</string>
+    <string name="main_menu_single_summoner_game">Summoner In-Game Stats</string>
+    <string name="main_menu_build_a_champ">Champion Item Builder</string>
+    <string name="main_menu_summoner_name">NAME</string>
+    <string name="main_menu_selected_region">REGION</string>
+    <string name="main_menu_version">Version</string>
+
+    <!--
+    Single Summoner
+    <string name="single_summoner_"></string>
+    -->
+    <string name="single_summoner_summoner_name">Summoner Name</string>
+    <string name="single_summoner_level">Level </string>
+    <string name="single_summoner_region">NA</string>
+    <string name="single_summoner_profile_icon">Summoner Profile Icon</string>
+    <string name="single_summoner_division">Challenger</string>
+    <string name="single_summoner_league_points">99 LP</string>
+    <string name="single_summoner_win_title">Wins:</string>
+    <string name="single_summoner_losses_title">Losses:</string>
+    <string name="single_summoner_win_value">10</string>
+    <string name="single_summoner_losses_value">10</string>
+    <string name="single_summoner_no_rank">No Rank!</string>
+    <!--
+    Champion Select
+    <string name="champion_select_"></string>
+
+    -->
+    <string name="champion_select_title">Pick a Champion:</string>
+
+    <!-- Individual Champion
+    <string name="indiv_champ_"></string>
+    -->
+    <string name="indiv_champ_name">Aatrox</string>
+    <string name="indiv_champ_descrip">The Darkin Blade</string>
+    <string name="indiv_champ_magic_title">Magic</string>
+    <string name="indiv_champ_attack_title">Attack</string>
+    <string name="indiv_champ_defense_title">Defense</string>
+    <string name="indiv_champ_difficulty_title">Difficulty</string>
+    <string name="indiv_champ_magic_stats">Magic stats</string>
+    <string name="indiv_champ_attack_stats">Attack Stats</string>
+    <string name="indiv_champ_defense_stats">Defense Stats</string>
+    <string name="indiv_champ_difficulty_value">Difficulty Stats</string>
+    <string name="indiv_champ_stats_title">Champion Stats:</string>
+    <string name="indiv_champ_tags">Tags:</string>
+    <!--
+    Stats In Game
+    <string name ="in_game_"></string>
+    -->
+    <string name ="in_game_title">In-Game Stats</string>
+    <string name ="in_game_champ_name">Champion</string>
+    <string name ="in_game_score">43 / 42</string>
+    <string name="in_game_mmr">1234 MMR</string>
+    <string name ="in_game_time">12:34</string>
+    <string name="in_game_ban_title">BANS</string>
+
+    <!--
+    In Game Single Summoner
+    <string name ="in_game_single_summoner_"></string>
+    -->
+    <string name ="in_game_single_summoner_refresh_button">REFRESH</string>
+    <string name ="in_game_single_summoner_item_title">Items:</string>
+
+    <!--
+    Champion Item Builder - Main Menu
+    <string name = "item_build_main_"></string>
+    -->
+    <string name = "item_build_main_title">Champion Builder</string>
+    <string name = "item_build_main_champion">1. SELECT YOUR CHAMPION</string>
+    <string name = "item_build_main_runes">2. SELECT YOUR RUNES</string>
+    <string name = "item_build_main_masteries">3. SELECT YOUR MASTERIES</string>
+    <string name = "item_build_main_items">4. SELECT YOUR ITEMS</string>
+    <string name = "item_build_main_start">START</string>
+
+    <!--
+    Champion Item Builder - Mastery
+    <string name = "item_build_mastery_"></string>
+    -->
+    <string name = "item_build_mastery_title">Mastery Picker</string>
+    <string name = "item_build_mastery_submit">SUBMIT</string>
+
+    <!--
+    Champion Item Builder - Rune Menu
+    <string name = "item_build_rune_"></string>
+    -->
+    <string name = "item_build_rune_title">Rune Picker</string>
+    <string name = "item_build_rune_stats">Total stats: </string>
+    <string name="item_build_rune_example">Rune X</string>
+    <string name="item_build_rune_example_effect">Effect Y</string>
+    <string name="item_build_rune_submit_button">SUBMIT</string>
+
+    <!--
+    Champion Item Builder - Rune Menu
+    <string name = "item_builder_"></string>
+    -->
+    <string name = "item_builder_title">ITEM BUILDER</string>
+    <string name = "item_builder_champ_name">Aatrox</string>
+    <string name = "item_builder_champ_descrip">The Darkin Blade</string>
+    <string name = "item_builder_items_title">Items</string>
+    <string name = "item_builder_example_item_title">Boots of Speed</string>
+    <string name="item_builder_ability_0">Passive</string>
+    <string name="item_builder_ability_1">Q Ability</string>
+    <string name="item_builder_ability_2">W Ability</string>
+    <string name="item_builder_ability_3">E Ability</string>
+    <string name="item_builder_ability_4">R Ability</string>
+    <string name="item_builder_ability_0_desc">Passive Description</string>
+    <string name="item_builder_ability_1_desc">Q Ability Description</string>
+    <string name="item_builder_ability_2_desc">W Ability Description</string>
+    <string name="item_builder_ability_3_desc">E Ability Description</string>
+    <string name="item_builder_ability_4_desc">R Ability Description</string>
+    <string name="item_builder_item_0_name">Item 0 desc</string>
+    <string name="item_builder_item_1_name">Item 1 desc</string>
+    <string name="item_builder_item_2_name">Item 2 desc</string>
+    <string name="item_builder_item_3_name">Item 3 desc</string>
+    <string name="item_builder_item_4_name">Item 4 desc</string>
+    <string name="item_builder_item_5_name">Item 5 desc</string>
+    <string name="item_builder_item_6_name">Item 6 desc</string>
+    <string name="item_builder_button">EXIT</string>
+
+    <!-- Disclaimer -->
+    <string name="disclaimer_text">This application isn\'t endorsed by Riot Games and doesn\'t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.</string>
+    <string name="disclaimer_link">©2015 Jake Deacon</string>
+</resources>

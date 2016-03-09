@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jake.LeagueStats" >
+    <!--Permission list
+    http://developer.android.com/reference/android/Manifest.permission.html -->
+    <!-- <uses-permission android:name="android.permission.SOME_PERMISSION"/> -->
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mastery"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.jake.LeagueStats.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"
+                />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.MainMenuActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.SingleSummonerActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.ChampionSelectActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.IndividualChampionActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.InGameSummonersActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.InGameSingleSummonerActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.ItemBuilderMenuActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.ItemBuilderRuneSelectionActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.ItemBuilderMasterySelectionActivity" >
+        </activity>
+        <activity android:name="com.example.jake.LeagueStats.ItemBuilderActivity" >
+        </activity>
+    </application>
+</manifest>

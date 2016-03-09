@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regions">
+        <item name="BR">BR</item>
+        <item name="CH">CH</item>
+        <item name="EUW">EUW</item>
+        <item name="EUNE">EUNE</item>
+        <item name="KR">KR</item>
+        <item name="LAN">LAN</item>
+        <item name="LAS">LAS</item>
+        <item name="NA">NA</item>
+        <item name="OCE">OCE</item>
+        <item name="RU">RU</item>
+        <item name="PBE">PBE</item>
+        <item name="TR">TR</item>
+    </string-array>
+
+</resources>

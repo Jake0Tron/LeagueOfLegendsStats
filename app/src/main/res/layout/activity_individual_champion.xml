@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:screenOrientation="portrait"
+    tools:context="com.example.jake.LeagueStats.IndividualChampionActivity">
+    <LinearLayout
+        android:id="@+id/steal_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+        <!--THIS IS HERE TO TAKE FOCUS AWAY FROM THE SPINNER AT THE TOP! -->
+    </LinearLayout>
+    <TextView
+        android:id="@+id/indiv_champ_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/indiv_champ_level_select"
+        android:layout_toStartOf="@+id/indiv_champ_level_select"
+        android:text="@string/indiv_champ_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        android:id="@+id/indiv_champ_descrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/indiv_champ_title"
+        android:layout_toLeftOf="@+id/indiv_champ_level_select"
+        android:layout_toStartOf="@+id/indiv_champ_level_select"
+        android:text="@string/indiv_champ_descrip"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+        android:id="@+id/indiv_champ_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/indiv_champ_descrip"
+        android:layout_toLeftOf="@+id/indiv_champ_level_select"
+        android:layout_toStartOf="@+id/indiv_champ_level_select"
+        android:padding="0dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/indiv_champ_tags"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <NumberPicker
+        android:id="@+id/indiv_champ_level_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/indiv_champ_rating_panel"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/indiv_champ_champion_picture"
+        android:layout_toStartOf="@+id/indiv_champ_champion_picture" />
+
+    <ImageView
+        android:id="@+id/indiv_champ_champion_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/indiv_champ_rating_panel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/aatrox" />
+
+    <TableLayout
+        android:id="@+id/indiv_champ_rating_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/indiv_champ_tags"
+        android:background="#222"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:stretchColumns="2">
+
+        <!-- Magic -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/indiv_champ_ability_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/indiv_champ_attack_title" />
+
+            <SeekBar
+                android:id="@+id/indiv_champ_rating_attack"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:max="10"
+                android:padding="5dp" />
+        </TableRow>
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <TextView
+            android:id="@+id/indiv_champ_ability_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/indiv_champ_defense_title" />
+
+            <SeekBar
+                android:id="@+id/indiv_champ_rating_defense"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:max="10"
+                android:padding="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:id="@+id/indiv_champ_ability_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/indiv_champ_magic_title" />
+
+            <SeekBar
+                android:id="@+id/indiv_champ_rating_magic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:max="10"
+                android:padding="5dp" />
+        </TableRow>
+
+        <!-- Attack-->
+        <!-- Defense-->
+        <!-- Difficulty-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/indiv_champ_ability_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/indiv_champ_difficulty_title" />
+
+            <SeekBar
+                android:id="@+id/indiv_champ_rating_difficulty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:max="10"
+                android:padding="5dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/indiv_champ_skins_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indiv_champ_rating_panel"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="@string/indiv_champ_stats_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/indiv_champ_skins_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/indiv_champ_skins_title"
+        android:layout_centerHorizontal="true"
+        android:background="#222" />
+
+
+</RelativeLayout>
